@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body { 
+  overflow-x: hidden; 
+}
+
+:root {
+  --cor1:#13131F;
+  --cor2:#720FA0;
+  --cor3:#8257E6;
+  --cor6:#828282;
+  --cor7:rgba(130, 130, 130, 0.233);
+  --cor8:rgba(255, 255, 255, 0.795);
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: 
+  "navegacao menu"
+  ;
+}
+
+header {
+  background-color: var(--cor2);
+  min-height: 100vh;
+  width: 25vw;
+}
+
+.navegacao {
+  grid-area: navegacao;
+}
+
+.navegacao-grid {
+  display: grid;
+}
+
+.foto-perfil {
+  width: 200px;
+  border-radius: 50%;
+  margin: 50px auto 50px;
+
+  display: grid;
+}
+
+.lista-navegacao {
+  font-size: 1.8em;
+  padding: 0px;
+
+  list-style-type: none;
+  width: 200px;
+  margin: auto;
+  text-align: left;
+  line-height: 50px;
+}
+
+.link-navegacao {
+  display: block;
+
+  text-decoration: none;
+  color: var(--cor8);
+  font-size: .7em;
+  font-style: normal;
+}
+
+.link-atual {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+
+main {
+  background-color: var(--cor1);
+  min-height: 100vh;
+  width: 75vw;
+}
+
+.conteudo-principal {
+  grid-area: menu;
+
+}
+
+/*  INDEX / SOBRE */
+
+.paragrafo-destaque {
+  color: var(--cor7);
+  font-size: 2em;
+
+  margin: 50px 0px 0px 100px;
+  padding: 0px;
+}
+
+.div-paragrafo-destaque {
+  display: flex;
+}
+
+.icone-br {
+  width: 70px;
+}
+
+h1 {
+  color: var(--cor3);
+  font-weight: normal;
+  font-size: 4.4em;
+  margin: 0px 0px 0px 95px;
+  padding: 0px;
+}
+
+.informacoes-addres {
+  display: block;
+  color: #ffffff;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin: 0px 0px 0px 100px;
+  font-size: 1.2em;
+}
+
+.link-email {
+  text-decoration: none;
+  color: var(--cor3);
+}
+
+.paragrafo-sobre {
+  display: inline-block;
+  width: 800px;
+  color: #ffffff;
+  margin: 60px 0px 0px 100px;
+  padding: 0px;
+  line-height: 2.5em;
+}
+
+.redes-sociais {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 60px 0px 0px 100px;
+  padding: 0px;
+}
+
+.redes-sociais li {
+  padding-right: 20px;
+}
+
+/*  CONHECIMENTOS */
+
+h2 {
+  display: block;
+  color: var(--cor3);
+  font-weight: normal;
+  font-size: 4.4em;
+  margin: 50px 0px 0px 95px;
+  padding: 0px;
+}
+
+.paragrafo-conhecimentos {
+  display: inline-block;
+  width: 800px;
+  color: #ffffff;
+  margin: 60px 0px 0px 100px;
+  padding: 0px;
+  line-height: 2.5em;
+}
+
+.lista-conhecimentos {
+  width: 800px;
+  padding: 0px;
+  margin: 50px 0px 0px 50px;
+  display: flex;
+  flex-direction: wrap;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.lista-conhecimentos li {
+  list-style: upper-alpha;
+  list-style-position: inside;
+  
+  padding: 20px;
+  margin: 0px 10px;
+  color: var(--cor1);
+  font-weight: 900;
+}
+
+.conhecimentos-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  width: 200px;
+}
+
+.conhecimentos-flex:hover {
+  background-color: var(--cor2);
+}
+
+
+
+/*  SOBRE */
+.paragrafo-objetivo {
+  display: inline-block;
+  width: 800px;
+  color: #ffffff;
+  margin: 60px 0px 0px 100px;
+  padding: 0px;
+  line-height: 2.5em;
+}
